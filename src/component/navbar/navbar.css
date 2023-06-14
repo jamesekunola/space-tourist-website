@@ -1,0 +1,158 @@
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  padding: 1rem;
+}
+
+.nav__center {
+  position: relative;
+}
+
+.nav__logo img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.nav__line {
+  display: none;
+}
+
+.nav__right {
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+  width: 60%;
+  min-height: 100vh;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(40.7742px);
+  padding: 1.5rem;
+  transform: translate(100%);
+  transition: 0.5s;
+}
+
+.nav__right.show {
+  transform: translate(0);
+}
+
+.nav__close__btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  padding: 0.3rem;
+}
+
+.links {
+  margin-top: 5rem;
+  list-style-type: none;
+}
+
+.links li {
+  margin-block: 1rem;
+}
+
+.links li a {
+  padding: 0.5rem;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: var(--Clr-white);
+}
+
+.nav__link__num {
+  font-weight: 700;
+  margin-right: 0.3rem;
+}
+
+/* tablets screen style */
+@media screen and (min-width: 41.25rem) {
+  nav {
+    padding: 0 0 0 2rem;
+  }
+
+  .nav__center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* nav__left */
+  .nav__hamburger__btn {
+    display: none;
+  }
+
+  /* nav__left */
+  .nav__right {
+    display: flex;
+    align-items: center;
+    position: static;
+    width: auto;
+    min-height: auto;
+    transform: translate(0);
+    padding: 0 0.5rem;
+  }
+
+  .nav__close__btn {
+    display: none;
+  }
+
+  .links {
+    margin-top: 0;
+    display: flex;
+  }
+
+  .links li {
+    margin: 0;
+  }
+
+  .links li a {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2.3625px;
+    padding: 1.7rem 0;
+    margin-inline: 0.7rem;
+  }
+
+  .nav__link__num {
+    display: none;
+  }
+
+  .links li a.nav__active {
+    border-bottom: 3px solid var(--Clr-white);
+  }
+}
+
+/* desktop screen size */
+
+@media screen and (min-width: 68.125rem) {
+  /* .flex {
+    justify-content: flex-starts;
+  } */
+
+  .nav__right {
+    flex: 0.6;
+    justify-content: center;
+  }
+
+  .nav__line {
+    display: block;
+    position: absolute;
+    width: 473px;
+    height: 1px;
+    left: 9.37rem;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    background: var(--Clr-white);
+    z-index: 1;
+  }
+
+  .links li a {
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    margin: 0 1rem;
+  }
+}

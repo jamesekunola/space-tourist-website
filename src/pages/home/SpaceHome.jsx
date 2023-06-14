@@ -1,10 +1,12 @@
-import React from "react";
+import "./SpaceHome.css";
 
 const SpaceHome = () => {
   return (
-    <div>
-      <h1>space SpaceHome</h1>
-    </div>
+    <main className="home__hero">
+      <div className="wrapper">
+        <h1>Home Component</h1>
+      </div>
+    </main>
   );
 };
 

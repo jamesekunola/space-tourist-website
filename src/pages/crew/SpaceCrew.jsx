@@ -1,6 +1,6 @@
 import React from "react";
 
-const crew = () => {
+const SpaceCrew = () => {
   return (
     <div>
       <h1>crew</h1>
@@ -8,4 +8,4 @@ const crew = () => {
   );
 };
 
-export default crew;
+export default SpaceCrew;
