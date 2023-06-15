@@ -4,7 +4,25 @@ const SpaceHome = () => {
   return (
     <main className="home__hero">
       <div className="wrapper">
-        <h1>Home Component</h1>
+        <div className="hero__content__container">
+          {/* hero text */}
+          <div className="hero__text">
+            <p className="hero__intro__text">SO, YOU WANT TO TRAVEL TO</p>
+            <h1 className="hero__heading">space</h1>
+            <p className="hero__insight__text">
+              Let’s face it; if you want to go to space, you might as well
+              genuinely go to outer space and not hover kind of on the edge of
+              it. Well sit back, and relax because we’ll give you a truly out of
+              this world experience!
+            </p>
+          </div>
+          {/* hero explore */}
+          <div>
+            <div className="hero__explore">
+              <p>EXPLORE</p>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
   );

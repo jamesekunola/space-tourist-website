@@ -7,11 +7,14 @@
 :root {
   --Clr-white: rgba(255, 255, 255, 1);
   --Dark-gray: rgba(208, 214, 249, 1);
+  --Text-color: rgb(208, 214, 249);
+  --Dark-text: rgba(11, 13, 23, 1);
 }
 
 body {
   font-family: "Barlow", sans-serif;
   overflow-x: hidden;
+  color: var(--Clr-white);
 }
 
 h1 {
@@ -53,4 +56,17 @@ a {
 .wrapper {
   max-width: 90rem;
   margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media screen and (min-width: 41.25rem) {
+  .wrapper {
+    padding: 0 2.5rem;
+  }
+}
+
+@media screen and (min-width: 60rem) {
+  .wrapper {
+    padding: 0 3rem;
+  }
 }

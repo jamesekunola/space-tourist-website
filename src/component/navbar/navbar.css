@@ -5,7 +5,7 @@
 }
 
 nav {
-  padding: 1rem;
+  padding: 1rem 0;
 }
 
 .nav__center {
@@ -71,7 +71,11 @@ nav {
 /* tablets screen style */
 @media screen and (min-width: 41.25rem) {
   nav {
-    padding: 0 0 0 2rem;
+    padding: 0;
+  }
+
+  nav .wrapper {
+    padding-right: 0;
   }
 
   .nav__center {
@@ -128,7 +132,7 @@ nav {
 
 /* desktop screen size */
 
-@media screen and (min-width: 68.125rem) {
+@media screen and (min-width: 60rem) {
   /* .flex {
     justify-content: flex-starts;
   } */
