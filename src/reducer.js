@@ -1,4 +1,4 @@
-import { TOGGLE_MOBILE_MENU, CLOSE_MOBILE_MENU } from "./actions";
+import { TOGGLE_MOBILE_MENU, CLOSE_MOBILE_MENU, SPACE_INFO } from "./actions";
 
 export const reducer = (state, action) => {
   // func
@@ -16,5 +16,14 @@ export const reducer = (state, action) => {
   if (action.type === CLOSE_MOBILE_MENU) {
     return showOrHideMobileMenu(false);
   }
+
+  if (action.type === SPACE_INFO) {
+    console.log(action.payload);
+    return {
+      ...state,
+      spaceInfo: action.payload,
+    };
+  }
+
   return state;
 };
