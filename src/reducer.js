@@ -18,7 +18,6 @@ export const reducer = (state, action) => {
   }
 
   if (action.type === SPACE_INFO) {
-    console.log(action.payload);
     return {
       ...state,
       spaceInfo: action.payload,

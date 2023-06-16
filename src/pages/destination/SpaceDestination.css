@@ -1,0 +1,218 @@
+.destination {
+  background-image: url("../../../public/assets/destination/background-destination-mobile.jpg");
+}
+
+.destination__container {
+  text-align: center;
+}
+
+.destination__intro_text {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--Dark-gray);
+}
+
+.destination__intro_num {
+  color: var(--Dark-);
+  text-transform: uppercase;
+  margin-left: 0.3rem;
+  color: var(--Text-color);
+  margin-right: 0.5rem;
+}
+
+.destination__left img {
+  width: 13.68rem;
+  height: 13.68;
+  margin: 2rem auto;
+}
+
+.destination__right button {
+  color: var(--Dark-gray);
+  display: inline-block;
+  width: auto;
+  margin-left: 0.5rem;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 0.3rem 0;
+  transition: 0.8s;
+  text-transform: uppercase;
+  margin-right: 1.3rem;
+  line-height: 17px;
+  letter-spacing: 2.362499952316284px;
+  color: var(--Dark-gray);
+  font-family: "Barlow Condensed";
+}
+
+.destination__right h2 {
+  margin-block: 1.5rem;
+  font-family: "Bellefair";
+  font-size: 3.5rem;
+  line-height: 64px;
+  text-transform: uppercase;
+}
+
+.destination__right p {
+  font-family: "Barlow";
+  font-size: 0.94rem;
+  line-height: 25px;
+  color: var(--Text-color);
+}
+
+.destination__distance_wrapper {
+  margin-top: 2rem;
+  padding: 1rem;
+  border-top: 1px solid var(--Light-gray);
+}
+
+.destination__distance,
+.destination__travel {
+  padding: 1rem;
+}
+
+.destination__distance h3,
+.destination__travel h3 {
+  font-family: "Bellefair";
+  font-size: 1.75rem;
+  line-height: 32px;
+  /* identical to box height */
+  text-transform: uppercase;
+  color: var(--Clr-white);
+  font-weight: 400;
+}
+
+.destination__distance span,
+.destination__travel span {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.destination__travels_details {
+  font-family: "Barlow Condensed";
+  font-size: 0.87rem;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 0.147rem;
+  text-transform: uppercase;
+  color: var(--Text-color);
+}
+
+.isActive {
+  font-family: Barlow Condensed;
+  border-bottom: 3px solid var(--Clr-white);
+}
+
+@media screen and (min-width: 41.25rem) {
+  .destination {
+    background-image: url("../../../public/assets/destination/background-destination-tablet.jpg");
+  }
+  .destination__intro_text {
+    text-align: left;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+    text-align: left;
+    text-align: left;
+  }
+
+  .destination__left img {
+    width: 18.75rem;
+    height: 18.75rem;
+  }
+
+  .destination__right button {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+  }
+
+  .destination__right h2 {
+    font-size: 5rem;
+    line-height: 5.75rem;
+  }
+
+  .destination__right p {
+    font-size: 1rem;
+    line-height: 1.75rem;
+    max-width: 35.81rem;
+    margin: 0 auto;
+  }
+
+  .destination__distance_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .destination__distance h3 {
+    font-size: 1.75rem;
+    line-height: 2rem;
+  }
+}
+
+@media screen and (min-width: 60rem) {
+  .destination {
+    background-image: url("../../../public/assets/destination/background-destination-desktop.jpg");
+  }
+
+  .destination__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  .destination__left img {
+    height: 24.81rem;
+    width: 24.81rem;
+  }
+
+  .destination__right {
+    text-align: left;
+  }
+
+  .destination__right button {
+    font-size: 1rem;
+  }
+
+  .destination__right h2 {
+    font-size: 100px;
+    line-height: 115px;
+  }
+
+  .destination__right p {
+    font-size: 1.125rem;
+    line-height: 2rem;
+    max-width: auto;
+    margin: 0;
+  }
+
+  .destination__distance_wrapper {
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4rem;
+    padding: 1.5rem 0 0 0;
+  }
+
+  .destination__distance,
+  .destination__travel {
+    padding: 0;
+  }
+
+  .destination__distance h3 {
+    font-size: 1.75rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .destination__travels_details {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}

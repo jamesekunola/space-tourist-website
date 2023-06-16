@@ -1,8 +1,5 @@
 import React from "react";
 import "./navbar.css";
-import logo from "../../assets/shared/logo.svg";
-import hamburgerMenu from "../../assets/shared/icon-hamburger.svg";
-import closeIcon from "../../assets/shared/icon-close.svg";
 import { NavLink, Link } from "react-router-dom";
 import { useGlobalState } from "../../context";
 
@@ -16,10 +13,10 @@ const Navbar = () => {
           {/* nav left */}
           <div className="nav__left flex">
             <Link to="." className="nav__logo">
-              <img src={logo} alt="logo" />
+              <img src="./assets/shared/logo.svg" alt="logo" />
             </Link>
             <button className="nav__hamburger__btn" onClick={toggleMenu}>
-              <img src={hamburgerMenu} alt="open menu" />
+              <img src="./assets/shared/icon-hamburger.svg" alt="open menu" />
             </button>
             <div className="nav__line"></div>
           </div>
@@ -28,7 +25,7 @@ const Navbar = () => {
           <div className={`nav__right ${isMenuOpen && "show"}`}>
             <div className="nav__navlinks">
               <button className="nav__close__btn" onClick={toggleMenu}>
-                <img src={closeIcon} alt="close menu" />
+                <img src="./assets/shared/icon-close.svg" alt="close menu" />
               </button>
               <div className="nav__links">
                 <ul className="links">

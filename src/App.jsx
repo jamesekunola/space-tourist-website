@@ -6,6 +6,7 @@ import SpaceHome from "./pages/home/SpaceHome";
 import SpaceDestination from "./pages/destination/SpaceDestination";
 import SpaceCrew from "./pages/crew/SpaceCrew";
 import SpaceTechnology from "./pages/technology/SpaceTechnology";
+import ErrorPage from "./pages/error/ErrorPage";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="destination" element={<SpaceDestination />} />
         <Route path="crew" element={<SpaceCrew />} />
         <Route path="technology" element={<SpaceTechnology />} />
+        <Route path="*" element={<ErrorPage />} />
       </Route>
     </Routes>
   );

@@ -9,6 +9,7 @@
   --Dark-gray: rgba(208, 214, 249, 1);
   --Text-color: rgb(208, 214, 249);
   --Dark-text: rgba(11, 13, 23, 1);
+  --Light-gray: rgb(56, 59, 75);
 }
 
 body {
@@ -39,7 +40,7 @@ h2 {
 p {
   color: var(--Dark-gray);
   font-size: 15px;
-  font-family: "Barlow", sans-serif;
+  font-family: Barlow Condensed;
 }
 
 button {
@@ -53,10 +54,25 @@ a {
   text-decoration: none;
 }
 
+img {
+  display: block;
+}
+
 .wrapper {
   max-width: 90rem;
   margin: 0 auto;
   padding: 0 1rem;
+}
+
+section,
+.home__hero {
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% 100%;
+  min-height: 100vh;
+  width: 100%;
+  margin-top: -4.84rem;
+  padding: 9rem 0 0.2rem;
 }
 
 @media screen and (min-width: 41.25rem) {

@@ -1,12 +1,5 @@
 .home__hero {
-  background-image: url("../../assets/home/background-home-mobile.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: 100% 100%;
-  min-height: 100vh;
-  width: 100%;
-  margin-top: -4.84rem;
-  padding: 9rem 1rem;
+  background-image: url("../../../public/assets/home/background-home-mobile.jpg");
 }
 
 .hero__text {
@@ -73,7 +66,7 @@
 /* tablet screen style */
 @media screen and (min-width: 41.25rem) {
   .home__hero {
-    background-image: url("../../assets/home/background-home-tablet.jpg");
+    background-image: url("../../../public/assets/home/background-home-tablet.jpg");
     padding: 10.5rem 1rem;
   }
 
@@ -106,7 +99,7 @@
 
 @media screen and (min-width: 60rem) {
   .home__hero {
-    background-image: url("../../assets/home/background-home-desktop.jpg");
+    background-image: url("../../../public/assets/home/background-home-desktop.jpg");
     padding: 8.5rem 1rem;
   }
 
