@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "./spacecrew.css";
 import { useGlobalState } from "../../context";
-import Description from "../../component/description/Description";
 import ImageSlider from "../../imageSlider/ImageSlider";
 
 const SpaceCrew = () => {

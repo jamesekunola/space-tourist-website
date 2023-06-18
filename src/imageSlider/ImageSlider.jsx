@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import "./imageSlider.css";
 
 const ImageSlider = ({ details, type }) => {
@@ -20,27 +20,29 @@ const ImageSlider = ({ details, type }) => {
     return position;
   };
 
-  const validateSlideIndex = (number) => {
-    if (number > details.length - 1) {
-      number = 0;
-    }
-    if (number < 0) {
-      number = details.length - 1;
-    }
+  // validate slide index
+  const validateSlideIndex = useCallback(
+    (number) => {
+      if (number >= details.length) {
+        return 0;
+      }
+      if (number < 0) {
+        return details.length - 1;
+      }
+      return number;
+    },
+    [details.length]
+  );
 
-    return number;
-  };
-
+  //show new slide every 5s
   useEffect(() => {
     const slider = setInterval(() => {
-      setCurrentIndex((prevIndex) => {
-        const newIndex = prevIndex + 1;
-        return validateSlideIndex(newIndex);
-      });
+      setCurrentIndex((prevIndex) => validateSlideIndex(prevIndex + 1));
     }, 5000);
 
+    //  clear interval when component unmounts
     return () => clearInterval(slider);
-  }, [currentIndex]);
+  }, [validateSlideIndex]);
 
   return (
     <div className="slider__container">

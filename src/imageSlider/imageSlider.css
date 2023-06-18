@@ -133,7 +133,7 @@
   }
 }
 
-@media screen and (min-width: 60rem) {
+@media screen and (min-width: 63rem) {
   .slider__container {
     display: flex;
     flex-direction: row-reverse;
