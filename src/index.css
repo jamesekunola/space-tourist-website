@@ -27,8 +27,9 @@ h2 {
   font-size: 63px;
 }
 
-/* h3 {
-} */
+h3 {
+  font-family: "Bellefair", serif;
+}
 
 h4 {
 }
@@ -39,8 +40,8 @@ h2 {
 
 p {
   color: var(--Dark-gray);
-  font-size: 15px;
   font-family: Barlow Condensed;
+  font-weight: 400;
 }
 
 button {
@@ -64,13 +65,33 @@ img {
   padding: 0 1rem;
 }
 
+.intro_text {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--Dark-gray);
+}
+
+.intro_num {
+  color: var(--Dark-);
+  text-transform: uppercase;
+  margin-left: 0.3rem;
+  color: var(--Text-color);
+  margin-right: 0.5rem;
+  display: inline-block;
+}
+
 section,
 .home__hero {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 100% 100%;
   min-height: 100vh;
-  width: 100%;
   margin-top: -4.84rem;
   padding: 9rem 0 0.2rem;
 }
@@ -78,6 +99,15 @@ section,
 @media screen and (min-width: 41.25rem) {
   .wrapper {
     padding: 0 2.5rem;
+  }
+
+  .intro_text {
+    text-align: left;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+    text-align: left;
+    text-align: left;
   }
 }
 

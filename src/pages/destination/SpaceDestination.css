@@ -6,26 +6,6 @@
   text-align: center;
 }
 
-.destination__intro_text {
-  font-family: "Barlow Condensed";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 2.7px;
-  text-transform: uppercase;
-  text-align: center;
-  color: var(--Dark-gray);
-}
-
-.destination__intro_num {
-  color: var(--Dark-);
-  text-transform: uppercase;
-  margin-left: 0.3rem;
-  color: var(--Text-color);
-  margin-right: 0.5rem;
-}
-
 .destination__left img {
   width: 13.68rem;
   height: 13.68;
@@ -111,14 +91,6 @@
 @media screen and (min-width: 41.25rem) {
   .destination {
     background-image: url("../../../public/assets/destination/background-destination-tablet.jpg");
-  }
-  .destination__intro_text {
-    text-align: left;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: 3.375px;
-    text-align: left;
-    text-align: left;
   }
 
   .destination__left img {

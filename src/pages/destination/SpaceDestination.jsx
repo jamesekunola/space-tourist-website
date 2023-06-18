@@ -20,14 +20,12 @@ const SpaceDestination = () => {
 
   const planetNames = spaceInfo.destinations.map((planet) => planet.name);
 
-  console.log(spaceInfo);
-
   return (
     <div>
       <section className="destination">
         <div className="wrapper">
-          <p className="destination__intro_text">
-            <span className="destination__intro_num">01</span>
+          <p className="intro_text">
+            <span className="intro_num">01</span>
             Pick your destination
           </p>
           <div className="destination__container">
