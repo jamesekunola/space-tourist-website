@@ -72,8 +72,8 @@ const SpaceTechnology = () => {
             </div>
 
             <div className="technology__desc">
-              <h3>THE TERMINOLOGY…</h3>
-              <h1>{name}</h1>
+              <p className="tech__intro">THE TERMINOLOGY…</p>
+              <h3>{name}</h3>
               <p>{description}</p>
             </div>
           </div>

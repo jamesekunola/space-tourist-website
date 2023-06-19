@@ -1,6 +1,6 @@
 import "./spacecrew.css";
 import { useOutletContext } from "react-router-dom";
-import ImageSlider from "../../imageSlider/ImageSlider";
+import ImageSlider from "../../component/imageSlider/ImageSlider";
 
 const SpaceCrew = () => {
   const { crew } = useOutletContext();

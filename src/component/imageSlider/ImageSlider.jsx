@@ -79,9 +79,9 @@ const ImageSlider = ({ details }) => {
 
             return (
               <div className={`desc__text ${position}`} key={index}>
-                <h3>{role}</h3>
-                <h1>{name}</h1>
-                <p>{bio}</p>
+                <p className="role">{role}</p>
+                <h3>{name}</h3>
+                <p className="info">{bio}</p>
               </div>
             );
           })}
