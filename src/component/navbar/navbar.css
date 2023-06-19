@@ -131,7 +131,6 @@ nav {
 }
 
 /* desktop screen size */
-
 @media screen and (min-width: 60rem) {
   /* .flex {
     justify-content: flex-starts;
@@ -142,21 +141,28 @@ nav {
     justify-content: center;
   }
 
+  .links li a {
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    margin: 0 1rem;
+    display: flex;
+  }
+
+  .nav__link__num {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1295px) {
   .nav__line {
     display: block;
     position: absolute;
-    width: 473px;
+    width: 35%;
     height: 1px;
     left: 9.37rem;
     mix-blend-mode: normal;
     opacity: 0.25;
     background: var(--Clr-white);
     z-index: 1;
-  }
-
-  .links li a {
-    font-size: 16px;
-    letter-spacing: 2.7px;
-    margin: 0 1rem;
   }
 }
