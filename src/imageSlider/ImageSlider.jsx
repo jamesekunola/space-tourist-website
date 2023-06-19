@@ -38,7 +38,7 @@ const ImageSlider = ({ details, type }) => {
   useEffect(() => {
     const slider = setInterval(() => {
       setCurrentIndex((prevIndex) => validateSlideIndex(prevIndex + 1));
-    }, 5000);
+    }, 3000);
 
     //  clear interval when component unmounts
     return () => clearInterval(slider);
@@ -65,9 +65,12 @@ const ImageSlider = ({ details, type }) => {
         <div className="carousel__btns">
           {details.map((btn, index) => (
             <span
+              key={index}
               className={`carousel__btn ${index === currentIndex && "active"}`}
               onClick={() => setCurrentIndex(index)}
-            ></span>
+            >
+              {type === "technology" ? index : null}
+            </span>
           ))}
         </div>
 
@@ -77,7 +80,7 @@ const ImageSlider = ({ details, type }) => {
             const position = setSliderPosition(index);
 
             return (
-              <div className={`desc__text ${position}`}>
+              <div className={`desc__text ${position}`} key={index}>
                 <h3>{role}</h3>
                 <h1>{name}</h1>
                 <p>{bio}</p>

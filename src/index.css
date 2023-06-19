@@ -60,7 +60,7 @@ img {
 }
 
 .wrapper {
-  max-width: 90rem;
+  max-width: 93rem;
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -93,7 +93,7 @@ section,
   background-size: 100% 100%;
   min-height: 100vh;
   margin-top: -4.84rem;
-  padding: 9rem 0 0.2rem;
+  padding: 7rem 0 2rem;
 }
 
 @media screen and (min-width: 41.25rem) {

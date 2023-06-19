@@ -138,7 +138,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
     align-items: center;
-    margin-top: 2rem;
+    padding: 2rem 0;
   }
 
   .destination__left img {
