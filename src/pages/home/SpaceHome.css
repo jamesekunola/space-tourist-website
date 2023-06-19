@@ -2,20 +2,17 @@
   background-image: url("../../../public/assets/home/background-home-mobile.jpg");
 }
 
-.hero__text {
-  text-align: center;
+.hero__content__container {
+  margin: 3rem 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3.5rem;
 }
 
-.hero__intro__text {
-  font-family: "Barlow Condensed";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 2.7px;
-  text-transform: uppercase;
-  color: var(--Text-color);
-  font-weight: 400;
+.hero__text {
+  text-align: center;
 }
 
 .hero__heading {
@@ -32,11 +29,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 .hero__explore p {
@@ -64,14 +56,9 @@
   .hero__heading {
     margin-block: 1rem;
   }
-
-  .hero__explore {
-    top: 75%;
-  }
 }
 
 /*desktop screen style*/
-
 @media screen and (min-width: 60rem) {
   .home__hero {
     background-image: url("../../../public/assets/home/background-home-desktop.jpg");
@@ -90,10 +77,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
-
-    position: absolute;
-    width: 100%;
-    height: calc(100vh - 13.34rem);
   }
 
   .hero__content__container > div {
@@ -102,9 +85,5 @@
 
   .hero__heading {
     margin: 2rem 0 2.5rem 0;
-  }
-
-  .hero__explore {
-    position: static;
   }
 }

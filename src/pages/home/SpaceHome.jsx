@@ -7,7 +7,7 @@ const SpaceHome = () => {
         <div className="hero__content__container">
           {/* hero text */}
           <div className="hero__text">
-            <p className="hero__intro__text">SO, YOU WANT TO TRAVEL TO</p>
+            <p className="intro_text">SO, YOU WANT TO TRAVEL TO</p>
             <h1 className="hero__heading">space</h1>
             <p className="hero__insight__text">
               Let’s face it; if you want to go to space, you might as well
