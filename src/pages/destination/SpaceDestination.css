@@ -44,10 +44,6 @@
   margin: 2rem auto;
 }
 
-.destination__left img,
-.destination__distance_wrapper {
-}
-
 .destination__right button {
   color: var(--Dark-gray);
   display: inline-block;
@@ -68,17 +64,7 @@
 
 .destination__right h2 {
   margin-block: 1.5rem;
-  font-family: "Bellefair";
-  font-size: 3.5rem;
-  line-height: 64px;
   text-transform: uppercase;
-}
-
-.destination__right p {
-  font-family: "Barlow";
-  font-size: 0.94rem;
-  line-height: 25px;
-  color: var(--Text-color);
 }
 
 .destination__distance_wrapper {
@@ -87,39 +73,28 @@
   border-top: 1px solid var(--Light-gray);
 }
 
+.destination__distance_wrapper p {
+  font-family: "Bellefair";
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
 .destination__distance,
 .destination__travel {
   padding: 1rem;
 }
 
-.destination__distance h3,
-.destination__travel h3 {
-  font-family: "Bellefair";
-  font-size: 1.75rem;
-  line-height: 32px;
-  text-transform: uppercase;
-  color: var(--Clr-white);
-  font-weight: 400;
-}
-
-.destination__distance span,
-.destination__travel span {
+.destination__distance h4,
+.destination__travel h4 {
   display: inline-block;
   margin-bottom: 0.5rem;
-}
-
-.destination__travels_details {
-  font-family: "Barlow Condensed";
-  font-size: 0.87rem;
-  line-height: 17px;
-  text-align: center;
-  letter-spacing: 0.147rem;
   text-transform: uppercase;
-  color: var(--Text-color);
 }
 
 .isActive {
-  font-family: Barlow Condensed;
   border-bottom: 3px solid var(--Clr-white);
 }
 
@@ -139,14 +114,7 @@
     letter-spacing: 2.7px;
   }
 
-  .destination__right h2 {
-    font-size: 5rem;
-    line-height: 5.75rem;
-  }
-
   .destination__right p {
-    font-size: 1rem;
-    line-height: 1.75rem;
     max-width: 35.81rem;
     margin: 0 auto;
   }
@@ -157,9 +125,9 @@
     align-items: center;
   }
 
-  .destination__distance h3 {
-    font-size: 1.75rem;
-    line-height: 2rem;
+  .destination__distance_wrapper p {
+    font-size: 28px;
+    line-height: 32px;
   }
 }
 
@@ -189,14 +157,7 @@
     font-size: 1rem;
   }
 
-  .destination__right h2 {
-    font-size: 100px;
-    line-height: 115px;
-  }
-
   .destination__right p {
-    font-size: 1.125rem;
-    line-height: 2rem;
     max-width: auto;
     margin: 0;
   }
@@ -208,18 +169,13 @@
     padding: 1.5rem 0 0 0;
   }
 
+  .destination__distance_wrapper p {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
   .destination__distance,
   .destination__travel {
     padding: 0;
-  }
-
-  .destination__distance h3 {
-    font-size: 1.75rem;
-    margin-bottom: 0.2rem;
-  }
-
-  .destination__travels_details {
-    font-size: 14px;
-    line-height: 17px;
   }
 }

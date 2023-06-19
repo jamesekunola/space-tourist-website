@@ -19,21 +19,7 @@
 }
 
 .hero__heading {
-  font-family: "Bellefair";
-  font-size: 80px;
-  line-height: 100px;
-  color: var(--Clr-white);
   text-transform: uppercase;
-  margin-block: 1.5rem;
-  font-weight: 400;
-}
-
-.hero__insight__text {
-  font-family: "Barlow";
-  font-size: 15px;
-  line-height: 25px;
-  color: var(--Text-color);
-  font-weight: 400;
 }
 
 .hero__explore {
@@ -75,19 +61,8 @@
     margin: 0 auto;
   }
 
-  .hero__intro__text {
-    font-size: 20px;
-  }
-
   .hero__heading {
-    font-size: 150px;
-    line-height: 150px;
     margin-block: 1rem;
-  }
-
-  .hero__insight__text {
-    font-size: 16px;
-    line-height: 28px;
   }
 
   .hero__explore {

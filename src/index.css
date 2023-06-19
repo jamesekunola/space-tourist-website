@@ -19,29 +19,48 @@ body {
 }
 
 h1 {
-  font-size: 80px;
+  /* space */
+  font-size: 5rem;
   font-family: "Bellefair", serif;
+  font-weight: 400;
+  line-height: 6.25rem;
+  color: var(--Clr-white);
 }
 
 h2 {
-  font-size: 63px;
+  /* moon */
+  font-family: "Bellefair", serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 4rem;
+  color: var(--Clr-white);
 }
 
 h3 {
+  /* Douglas Hurley  lunch vehicle*/
   font-family: "Bellefair", serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.75rem;
 }
 
 h4 {
-}
-
-h2 {
-  font-family: "Barlow Condensed", sans-serif;
+  /* avg distance */
+  font-family: Barlow Condensed;
+  font-size: 0.88rem;
+  font-weight: 400;
+  line-height: 1.06rem;
+  letter-spacing: 0.15rem;
+  color: var(--Text-color);
 }
 
 p {
-  color: var(--Dark-gray);
-  font-family: Barlow Condensed;
+  color: var(--Text-color);
+  font-family: "Barlow", sans-serif;
   font-weight: 400;
+  font-size: 0.93rem;
+  font-weight: 400;
+  line-height: 1.56rem;
 }
 
 button {
@@ -101,6 +120,36 @@ section,
     padding: 0 2.5rem;
   }
 
+  h1 {
+    /* space */
+    font-size: 9.37rem;
+    line-height: 9.38rem;
+  }
+
+  h2 {
+    /* moon */
+    font-size: 5rem;
+    line-height: 5.75rem;
+  }
+
+  h3 {
+    /* lunch vehicle */
+    font-size: 2.5rem;
+    line-height: 2.88rem;
+  }
+
+  h4 {
+    /* avg distance */
+    font-size: 0.875rem;
+    line-height: 1.06rem;
+    letter-spacing: 0.147rem;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.75rem;
+  }
+
   .intro_text {
     text-align: left;
     font-size: 20px;
@@ -114,5 +163,35 @@ section,
 @media screen and (min-width: 60rem) {
   .wrapper {
     padding: 0 3rem;
+  }
+
+  h1 {
+    /* space */
+    font-size: 9.38rem;
+    line-height: 10.75rem;
+  }
+
+  h2 {
+    /* moon */
+    font-size: 5rem;
+    line-height: 5.75rem;
+  }
+
+  h3 {
+    /* lunch vehicle */
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+
+  h4 {
+    /* avg distance */
+    font-size: 0.875rem;
+    line-height: 1.06rem;
+    letter-spacing: 0.15rem;
+  }
+
+  p {
+    font-size: 1.125rem;
+    line-height: 2rem;
   }
 }

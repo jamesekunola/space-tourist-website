@@ -1,14 +1,9 @@
-import { useState } from "react";
 import "./spacecrew.css";
-import { useGlobalState } from "../../context";
+import { useOutletContext } from "react-router-dom";
 import ImageSlider from "../../imageSlider/ImageSlider";
 
 const SpaceCrew = () => {
-  const [displayedIndex, setDisplayedIndex] = useState(0);
-
-  const {
-    spaceInfo: { crew },
-  } = useGlobalState();
+  const { crew } = useOutletContext();
 
   if (!crew) {
     return <h1>Loading...</h1>;
@@ -22,7 +17,7 @@ const SpaceCrew = () => {
           Meet your crew
         </p>
 
-        <ImageSlider details={crew} type="crew" />
+        <ImageSlider details={crew} />
       </div>
     </section>
   );

@@ -1,12 +1,13 @@
 import React, { useState } from "react";
-import { useGlobalState } from "../../context";
 import "./SpaceDestination.css";
+import { useOutletContext } from "react-router-dom";
 
 const SpaceDestination = () => {
-  const [displayedIndex, setDisplayedIndex] = useState(0);
-  const { spaceInfo } = useGlobalState();
+  const { destinations } = useOutletContext();
 
-  if (!spaceInfo.destinations) {
+  const [displayedIndex, setDisplayedIndex] = useState(0);
+
+  if (!destinations) {
     return <h1>Loading</h1>;
   }
 
@@ -16,9 +17,9 @@ const SpaceDestination = () => {
     images: { webp },
     name,
     travel,
-  } = spaceInfo.destinations[displayedIndex];
+  } = destinations[displayedIndex];
 
-  const planetNames = spaceInfo.destinations.map((planet) => planet.name);
+  const planetNames = destinations.map((planet) => planet.name);
 
   return (
     <section className="destination">
@@ -34,7 +35,6 @@ const SpaceDestination = () => {
           </div>
 
           {/* destination right */}
-
           <div className="destination__right">
             {/* planet names*/}
             {planetNames.map((planet, index) => (
@@ -55,16 +55,13 @@ const SpaceDestination = () => {
             <div className="destination__distance_wrapper">
               {/*  DISTANCE */}
               <div className="destination__distance">
-                <span className="destination__travels_details">
-                  AVG. DISTANCE
-                </span>
-                <h3>{distance}</h3>
+                <h4>AVG. DISTANCE</h4>
+                <p>{distance}</p>
               </div>
+              {/* travel */}
               <div className="destination__travel">
-                <span className="destination__travels_details">
-                  Est. travel time
-                </span>
-                <h3>{travel}</h3>
+                <h4>Est. travel time</h4>
+                <p>{travel}</p>
               </div>
             </div>
           </div>

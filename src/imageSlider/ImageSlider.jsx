@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import "./imageSlider.css";
 
-const ImageSlider = ({ details, type }) => {
+const ImageSlider = ({ details }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const setSliderPosition = (index) => {
@@ -42,7 +42,7 @@ const ImageSlider = ({ details, type }) => {
 
     //  clear interval when component unmounts
     return () => clearInterval(slider);
-  }, [validateSlideIndex]);
+  }, [validateSlideIndex, currentIndex]);
 
   return (
     <div className="slider__container">
@@ -68,9 +68,7 @@ const ImageSlider = ({ details, type }) => {
               key={index}
               className={`carousel__btn ${index === currentIndex && "active"}`}
               onClick={() => setCurrentIndex(index)}
-            >
-              {type === "technology" ? index : null}
-            </span>
+            ></span>
           ))}
         </div>
 
