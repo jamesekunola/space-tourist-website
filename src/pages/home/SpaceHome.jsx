@@ -1,4 +1,5 @@
 import "./SpaceHome.css";
+import { Link } from "react-router-dom";
 
 const SpaceHome = () => {
   return (
@@ -18,9 +19,11 @@ const SpaceHome = () => {
           </div>
           {/* hero explore */}
           <div>
-            <div className="hero__explore">
-              <p>EXPLORE</p>
-            </div>
+            <Link to="destination">
+              <div className="hero__explore">
+                <p>EXPLORE</p>
+              </div>
+            </Link>
           </div>
         </div>
       </div>

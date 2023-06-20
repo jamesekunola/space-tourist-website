@@ -40,8 +40,22 @@
 
 .destination__left img {
   width: 13.68rem;
-  height: 13.68;
+  height: 13.68rem;
   margin: 2rem auto;
+  animation: rotate 5s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .destination__right button {

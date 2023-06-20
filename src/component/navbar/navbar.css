@@ -10,6 +10,7 @@ nav {
 
 .nav__center {
   position: relative;
+  width: 100%;
 }
 
 .nav__logo img {
@@ -26,12 +27,13 @@ nav {
   top: -1rem;
   right: -1rem;
   width: 60%;
-  min-height: 100vh;
+  height: 100vh;
   background: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(40.7742px);
   padding: 1.5rem;
   transform: translate(100%);
   transition: 0.5s;
+  z-index: 999;
 }
 
 .nav__right.show {
@@ -95,7 +97,7 @@ nav {
     align-items: center;
     position: static;
     width: auto;
-    min-height: auto;
+    height: auto;
     transform: translate(0);
     padding: 0 0.5rem;
   }
