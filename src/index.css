@@ -79,6 +79,7 @@ img {
   max-width: 94.3rem;
   margin: 0 auto;
   padding: 0 1rem;
+  position: relative;
 }
 
 .intro_text {
@@ -107,9 +108,9 @@ section,
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 100% 100%;
-  min-height: 100vh;
-  margin-top: -4.84rem;
   padding: 7rem 0 2rem;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 @media screen and (min-width: 41.25rem) {
@@ -152,8 +153,7 @@ section,
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 3.375px;
-    text-align: left;
-    text-align: left;
+    text-align: center;
   }
 }
 

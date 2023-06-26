@@ -4,13 +4,13 @@
   align-items: center;
 }
 
-nav {
-  padding: 1rem 0;
-}
-
 .nav__center {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  padding: 1rem;
+  overflow-x: hidden;
 }
 
 .nav__logo img {
@@ -23,9 +23,9 @@ nav {
 }
 
 .nav__right {
-  position: absolute;
-  top: -1rem;
-  right: -1rem;
+  position: fixed;
+  top: 0;
+  right: 0;
   width: 60%;
   height: 100vh;
   background: rgba(255, 255, 255, 0.04);
@@ -78,12 +78,14 @@ nav {
 
   nav .wrapper {
     padding-right: 0;
+    position: relative;
   }
 
   .nav__center {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 0 0 1.5rem;
   }
 
   /* nav__left */
@@ -134,9 +136,9 @@ nav {
 
 /* desktop screen size */
 @media screen and (min-width: 60rem) {
-  /* .flex {
-    justify-content: flex-starts;
-  } */
+  .nav__center {
+    padding-left: 2rem;
+  }
 
   .nav__right {
     flex: 0.6;
